@@ -3,10 +3,13 @@
 
   <head>
     <meta charset="UTF-8">
+    <!-- TODO: Investigar más qué es i18n -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Investigar más sobre favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="index.css">
     <style>
+      /* TODO: Mover este código a tu index.css */
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
     </style>
     <title>Frontend Mentor | [Challenge Name Here]</title>
@@ -23,6 +26,7 @@
       </div>
       <section class="header-content switch-position">
         <span class="header-text">Dark Mode</span>
+        <!-- TODO: Este for attribute dentro de label, es una buena práctica de accesbilidad -->
         <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
     </header>
 
@@ -30,13 +34,18 @@
 
       <div class="fb-style card-container">
         <div class="user-profile">
-          <img src="images\icon-facebook.svg" alt="tw-icon">
+          <!-- TODO: Research about inline SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#178FF5" d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"/></svg>
+          <!-- <img src="images\icon-facebook.svg" alt="tw-icon"> -->
           <span class="user-position">@nathanf</span>
         </div>
         <span class="numbers">1987</span>
         <span class="people">Followers</span>
         <div class="status-container">
           <img src="images\icon-up.svg" alt="up-arrow">
+          <!-- TODO: Research about alt attributes best practices
+          https://moz.com/learn/seo/alt-text
+          -->
           <span class="green-status">99 Today</span>
         </div>
       </div>
@@ -184,6 +193,7 @@
     </main>
 
   </body>
+  <!-- TODO: Read this https://javascript.info/script-async-defer -->
   <script src="script.js" type="text/javascript"></script>
 
 </html>
