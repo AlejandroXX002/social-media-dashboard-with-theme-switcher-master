@@ -11,6 +11,7 @@
 	--veryDarkBlue: hsl(232, 19%, 15%);
 	--desaturatedBlue: hsl(228, 34%, 66%);
 
+	/* TODO: Use one color unit */
 	--white: hsl(0, 0%, 100%);
 	--lightBgCard: hsl(227, 47%, 96%);
 	--veryPaleBlue: hsl(225, 100%, 98%);
@@ -22,6 +23,7 @@
 
 /* themes */
 .light-theme {
+	/* TODO: Use camelCase or whatever you want, but stick to one pattern an be consistent */
 	--topBackground: var(--veryPaleBlue);
 	--mainBackground: var(--white);
 	--headerH2: var(--lightTextTwo);
@@ -36,17 +38,18 @@
 }
 
 .dark-theme {
-	--topBackground: var(--veryDarkBlue);
-	--mainBackground: var(--DarkBlue);
-	--headerH2: var(--white);
-	--outsideText: var(--desaturatedBlue);
+	/* TODO: Sort alphabetically all your rules and variables  */
 	--cardBackground: var(--darkDesaturatedBlue);
-	--numbersColor: var(--white);
-	--textColor: var(--desaturatedBlue);
-	--secondHeaderH2: var(--darkGrayishBlue);
-	--themeSwitchColor: var(--darkDesaturatedBlue);
-	--firtHeader: var(--white);
+	--firstHeader: var(--white);
+	--headerH2: var(--white);
 	--hoverEffect: var(--shadowLight);
+	--mainBackground: var(--DarkBlue);
+	--numbersColor: var(--white);
+	--outsideText: var(--desaturatedBlue);
+	--secondHeaderH2: var(--darkGrayishBlue);
+	--textColor: var(--desaturatedBlue);
+	--themeSwitchColor: var(--darkDesaturatedBlue);
+	--topBackground: var(--veryDarkBlue);
 }
 
 body {
@@ -55,9 +58,9 @@ body {
 
 main {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	flex-direction: row;
 	position: absolute;
 	top: 170px;
 }
@@ -88,6 +91,7 @@ h2 {
 }
 
 .second-h2 {
+	/* TODO: use nth-child selector */
 	color: var(--secondHeaderH2);
 	display: block;
 	margin: auto;
